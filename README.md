@@ -135,11 +135,13 @@ To make Bayesian inference tractable, the GNN encoder is trained first and then 
 The UMAP plot in the notebook provides a qualitative view of the learned node embedding space. Node colors are based on an approximate majority label inferred from incident training edges, rather than true node labels.
 
 --------------------------------------------
-KINDLY USE THIS CITATION WHEN NUTSGRAPH IS USED
+KINDLY USE THIS CITATION FOR NUTSGRAPH 
 ---------------------------------------------------
 Osei-Wusu,F., Appiah, O., Mensah,P. K., Nimbe, P.,  and Donkoh,E. K. “ A Graph-Based Bayesian Intrusion Detection Framework With No-U-Turn Sampling for Uncertainty-Aware IoT Security,” Concurrency and Computation: Practice and Experience 38, no. 14 (2026): e70817, https://doi.org/10.1002/cpe.70817.
 
 
-Limitations
+-------------------------------
+LIMITATIONS
+---------------------------------
 
 This implementation applies Bayesian inference only to the classifier stage and not to the full graph encoder. As a result, uncertainty in the representation-learning component is not fully propagated through the entire architecture. In addition, NUTS can be computationally intensive, so practical execution may require careful control of subset size and sampler settings.
